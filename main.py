@@ -13,7 +13,7 @@ def generate_random_data():
         "sensor_id": random.randint(1, 10),
         "temperature": round(random.uniform(20.0, 30.0), 2),
         "humidity": round(random.uniform(30.0, 60.0), 2),
-        "timestamp": time.time()
+        "event_time": time.time()
     }
 
 def send_data_to_kinesis():
